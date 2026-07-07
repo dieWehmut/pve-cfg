@@ -1,0 +1,16 @@
+id: 199
+kind: vm
+name: DSM
+status: running
+pve_host: dieSehnsucht
+os: l26
+managed_by: manual-or-image-backup
+vlan: 80
+zone: storage_zone
+address_configured: null
+address_observed: 192.168.80.2/24
+bridge: vmbr0
+onboot: false
+memory_mb: 8192
+cores: 4
+bootdisk: 3.50

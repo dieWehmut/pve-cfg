@@ -1,0 +1,11 @@
+# OpenTofu / Terraform local state
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+crash.log
+crash.*.log
+
+# Local scratch exports
+*.raw
+*.secret

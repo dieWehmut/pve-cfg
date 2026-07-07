@@ -1,0 +1,75 @@
+[
+  {
+    "hardware-address": "00:00:00:00:00:00",
+    "ip-addresses": [
+      {
+        "ip-address": "127.0.0.1",
+        "ip-address-type": "ipv4",
+        "prefix": 8
+      },
+      {
+        "ip-address": "::1",
+        "ip-address-type": "ipv6",
+        "prefix": 128
+      }
+    ],
+    "name": "lo",
+    "statistics": {
+      "rx-bytes": 0,
+      "rx-dropped": 0,
+      "rx-errs": 0,
+      "rx-packets": 0,
+      "tx-bytes": 0,
+      "tx-dropped": 0,
+      "tx-errs": 0,
+      "tx-packets": 0
+    }
+  },
+  {
+    "hardware-address": "bc:24:11:f0:51:8a",
+    "ip-addresses": [
+      {
+        "ip-address": "192.168.50.14",
+        "ip-address-type": "ipv4",
+        "prefix": 24
+      },
+      {
+        "ip-address": "fe80::be24:11ff:fef0:518a",
+        "ip-address-type": "ipv6",
+        "prefix": 64
+      }
+    ],
+    "name": "enp6s18",
+    "statistics": {
+      "rx-bytes": 12406277,
+      "rx-dropped": 0,
+      "rx-errs": 0,
+      "rx-packets": 91195,
+      "tx-bytes": 2361804,
+      "tx-dropped": 0,
+      "tx-errs": 0,
+      "tx-packets": 25111
+    }
+  },
+  {
+    "hardware-address": "c6:c2:6a:fa:c3:96",
+    "ip-addresses": [
+      {
+        "ip-address": "172.17.0.1",
+        "ip-address-type": "ipv4",
+        "prefix": 16
+      }
+    ],
+    "name": "docker0",
+    "statistics": {
+      "rx-bytes": 0,
+      "rx-dropped": 0,
+      "rx-errs": 0,
+      "rx-packets": 0,
+      "tx-bytes": 0,
+      "tx-dropped": 0,
+      "tx-errs": 0,
+      "tx-packets": 0
+    }
+  }
+]

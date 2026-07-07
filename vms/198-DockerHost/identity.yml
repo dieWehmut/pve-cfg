@@ -1,0 +1,16 @@
+id: 198
+kind: vm
+name: DockerHost
+status: running
+pve_host: dieSehnsucht
+os: "Debian GNU/Linux 12 (bookworm)"
+managed_by: ansible-cfg
+vlan: 50
+zone: app_zone
+address_configured: null
+address_observed: 192.168.50.14/24
+bridge: vmbr0
+onboot: true
+memory_mb: 8192
+cores: 4
+bootdisk: 100.00

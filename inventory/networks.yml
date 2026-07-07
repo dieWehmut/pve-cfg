@@ -1,0 +1,123 @@
+generated_at: 2026-07-07
+pve_host: 
+  name: dieSehnsucht
+  management_address: 192.168.10.2/24
+  bridge: vmbr0
+  gateway: 192.168.10.1
+  openwrt_route: "192.168.0.0/16 via 192.168.10.10"
+openwrt_router: 
+  vmid: 100
+  name: OpenWrt
+  lan_address: 192.168.10.10/24
+  config_dir: openwrt/100-OpenWrt
+networks: 
+    - name: lan
+      device: eth0
+      vlan: null
+      proto: static
+      address: 192.168.10.10/24
+      gateway: 192.168.10.1
+      dns: 
+      - 192.168.10.1
+    - name: wg0
+      device: null
+      vlan: null
+      proto: wireguard
+      address: 10.254.254.3/32
+      gateway: null
+      dns: 
+      - 8.8.8.8
+      - 1.1.1.1
+      - 1.1.1.1
+      - 8.8.8.8
+    - name: nginx_zone
+      device: eth1.30
+      vlan: 30
+      proto: static
+      address: 192.168.30.1/24
+      gateway: null
+      dns: []
+    - name: tunnel_zone
+      device: eth1.40
+      vlan: 40
+      proto: static
+      address: 192.168.40.1/24
+      gateway: null
+      dns: []
+    - name: app_zone
+      device: eth1.50
+      vlan: 50
+      proto: static
+      address: 192.168.50.1/24
+      gateway: null
+      dns: []
+    - name: monitor_zone
+      device: eth1.60
+      vlan: 60
+      proto: static
+      address: 192.168.60.1/24
+      gateway: null
+      dns: []
+    - name: user_zone
+      device: eth1.66
+      vlan: 66
+      proto: static
+      address: 192.168.66.1/24
+      gateway: null
+      dns: []
+    - name: group_zone
+      device: eth1.67
+      vlan: 67
+      proto: static
+      address: 192.168.67.1/24
+      gateway: null
+      dns: []
+    - name: mgmt_zone
+      device: eth1.70
+      vlan: 70
+      proto: static
+      address: 192.168.70.1/24
+      gateway: null
+      dns: []
+    - name: storage_zone
+      device: eth1.80
+      vlan: 80
+      proto: static
+      address: 192.168.80.1/24
+      gateway: null
+      dns: []
+    - name: db_zone
+      device: eth1.90
+      vlan: 90
+      proto: static
+      address: 192.168.90.1/24
+      gateway: null
+      dns: []
+    - name: cicd_zone
+      device: eth1.100
+      vlan: 100
+      proto: static
+      address: 192.168.100.1/24
+      gateway: null
+      dns: []
+    - name: git_zone
+      device: eth1.110
+      vlan: 110
+      proto: static
+      address: 192.168.110.1/24
+      gateway: null
+      dns: []
+    - name: media_zone
+      device: eth1.120
+      vlan: 120
+      proto: static
+      address: 192.168.120.1/24
+      gateway: null
+      dns: []
+    - name: ai_zone
+      device: eth1.130
+      vlan: 130
+      proto: static
+      address: 192.168.130.1/24
+      gateway: null
+      dns: []

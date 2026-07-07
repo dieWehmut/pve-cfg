@@ -1,0 +1,10 @@
+{
+  "id": "debian",
+  "kernel-release": "6.1.0-50-amd64",
+  "kernel-version": "#1 SMP PREEMPT_DYNAMIC Debian 6.1.176-1 (2026-07-02)",
+  "machine": "x86_64",
+  "name": "Debian GNU/Linux",
+  "pretty-name": "Debian GNU/Linux 12 (bookworm)",
+  "version": "12 (bookworm)",
+  "version-id": "12"
+}

@@ -1,0 +1,16 @@
+id: 197
+kind: vm
+name: NixOS
+status: running
+pve_host: dieSehnsucht
+os: l26
+managed_by: nixos-cfg
+vlan: 50
+zone: app_zone
+address_configured: null
+address_observed: null
+bridge: vmbr0
+onboot: false
+memory_mb: 8192
+cores: 4
+bootdisk: 100.00
