@@ -1,49 +1,50 @@
 # Coder (115)
 
 - Type: LXC
-- PVE status: running
+- PVE status before inventory: running
+- PVE status after inventory: running
+- Started only for inventory: no
 - Managed by: ansible-cfg
+- OS: Debian GNU/Linux 12 (bookworm)
 - Configured address: 192.168.50.13/24
 - Observed address: 192.168.50.13/24
 - VLAN/zone: 50 (app_zone)
+- Detailed snapshot: ansible-cfg/snapshots/lxc/115-Coder
 
-## Runtime Snapshot
+## Snapshot Counts
 
-Collected read-only with `pct exec` on 2026-07-07. Full dependency snapshots for Debian containers are stored in `ansible-cfg/snapshots/`.
+- Manual packages: 279
+- Installed packages: 290
+- Running services: 13
+- Enabled services: 17
+- Listening sockets: 8
+- Docker containers: 0
+- Docker images: 0
 
-## Running Services
+## Snapshot Files
 
-```text
-  coder.service             loaded active running "Coder - Self-hosted developer workspaces on your infra"
-  console-getty.service     loaded active running Console Getty
-  container-getty@1.service loaded active running Container Getty on /dev/tty1
-  container-getty@2.service loaded active running Container Getty on /dev/tty2
-  containerd.service        loaded active running containerd container runtime
-  cron.service              loaded active running Regular background program processing daemon
-  dbus.service              loaded active running D-Bus System Message Bus
-  docker.service            loaded active running Docker Application Container Engine
-  postfix@-.service         loaded active running Postfix Mail Transport Agent (instance -)
-  ssh.service               loaded active running OpenBSD Secure Shell server
-  systemd-journald.service  loaded active running Journal Service
-  systemd-logind.service    loaded active running User Login Management
-  systemd-networkd.service  loaded active running Network Configuration
-```
-
-## Listening Sockets
-
-```text
-Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess
-udp   UNCONN 0      0            0.0.0.0:50953      0.0.0.0:*    users:(("coder",pid=143,fd=16))
-udp   UNCONN 0      0               [::]:52534         [::]:*    users:(("coder",pid=143,fd=15))
-tcp   LISTEN 0      100        127.0.0.1:25         0.0.0.0:*    users:(("master",pid=296,fd=13))
-tcp   LISTEN 0      244        127.0.0.1:32813      0.0.0.0:*    users:(("postgres",pid=506,fd=8))
-tcp   LISTEN 0      100            [::1]:25            [::]:*    users:(("master",pid=296,fd=14))
-tcp   LISTEN 0      244            [::1]:32813         [::]:*    users:(("postgres",pid=506,fd=7))
-tcp   LISTEN 0      4096               *:22               *:*    users:(("sshd",pid=136,fd=3),("systemd",pid=1,fd=40))
-tcp   LISTEN 0      4096               *:3000             *:*    users:(("coder",pid=143,fd=4))
-```
-
-## Manual Package Count
-
-279 packages recorded.
-
+- apt-sources.txt
+- config-paths.txt
+- cron.txt
+- df.txt
+- docker-compose-ls.txt
+- docker-images.txt
+- docker-ps.txt
+- enabled-services.txt
+- fstab.txt
+- hostname.txt
+- ip-address.txt
+- ip-route.txt
+- listening.txt
+- manual-packages.txt
+- meta.env
+- mounts.txt
+- openwrt-uci.txt
+- os-release.txt
+- packages.txt
+- pve-config.txt
+- resolv.conf.txt
+- running-services.txt
+- systemd-unit-files.txt
+- timers.txt
+- uname.txt

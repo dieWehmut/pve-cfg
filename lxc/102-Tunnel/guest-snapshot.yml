@@ -1,0 +1,48 @@
+ctid: 102
+name: Tunnel
+collected_at: 2026-07-07
+initial_status: running
+final_status: running
+started_for_inventory: false
+inspection_status: collected
+snapshot_repository: ansible-cfg
+snapshot_path: snapshots/lxc/102-Tunnel
+files: 
+  - apt-sources.txt
+  - config-paths.txt
+  - cron.txt
+  - df.txt
+  - docker-compose-ls.txt
+  - docker-images.txt
+  - docker-ps.txt
+  - enabled-services.txt
+  - fstab.txt
+  - hostname.txt
+  - ip-address.txt
+  - ip-route.txt
+  - listening.txt
+  - manual-packages.txt
+  - meta.env
+  - mounts.txt
+  - openwrt-uci.txt
+  - os-release.txt
+  - packages.txt
+  - pve-config.txt
+  - resolv.conf.txt
+  - running-services.txt
+  - systemd-unit-files.txt
+  - timers.txt
+  - uname.txt
+counts: 
+  collected_at: 2026-07-07
+  inspection_status: collected
+  started_for_inventory: false
+  final_status: running
+  snapshot: ansible-cfg/snapshots/lxc/102-Tunnel
+  manual_package_count: 270
+  package_count: 271
+  running_service_count: 13
+  enabled_service_count: 16
+  listening_socket_count: 4
+  docker_container_count: 0
+  docker_image_count: 0

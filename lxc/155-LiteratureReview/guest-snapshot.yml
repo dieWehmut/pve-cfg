@@ -1,0 +1,50 @@
+ctid: 155
+name: LiteratureReview
+collected_at: 2026-07-07
+initial_status: stopped
+final_status: stopped
+started_for_inventory: true
+inspection_status: collected
+snapshot_repository: ansible-cfg
+snapshot_path: snapshots/lxc/155-LiteratureReview
+files: 
+  - apt-sources.txt
+  - config-paths.txt
+  - cron.txt
+  - df.txt
+  - docker-compose-ls.txt
+  - docker-images.txt
+  - docker-ps.txt
+  - enabled-services.txt
+  - fstab.txt
+  - hostname.txt
+  - ip-address.txt
+  - ip-route.txt
+  - listening.txt
+  - manual-packages.txt
+  - meta.env
+  - mounts.txt
+  - openwrt-uci.txt
+  - os-release.txt
+  - packages.txt
+  - pve-config.txt
+  - resolv.conf.txt
+  - running-services.txt
+  - start.log
+  - stop.log
+  - systemd-unit-files.txt
+  - timers.txt
+  - uname.txt
+counts: 
+  collected_at: 2026-07-07
+  inspection_status: collected
+  started_for_inventory: true
+  final_status: stopped
+  snapshot: ansible-cfg/snapshots/lxc/155-LiteratureReview
+  manual_package_count: 270
+  package_count: 323
+  running_service_count: 13
+  enabled_service_count: 17
+  listening_socket_count: 6
+  docker_container_count: 1
+  docker_image_count: 37

@@ -2,8 +2,10 @@ id: 112
 kind: lxc
 name: CodeRunner
 status: running
+initial_status: running
 pve_host: dieSehnsucht
-os: debian
+os: "Debian GNU/Linux 12 (bookworm)"
+os_id: debian
 managed_by: ansible-cfg
 vlan: 50
 zone: app_zone
@@ -16,3 +18,16 @@ unprivileged: true
 rootfs: "local-lvm:vm-112-disk-0,size=310G"
 memory_mb: 8192
 cores: 6
+guest_inventory: 
+  collected_at: 2026-07-07
+  inspection_status: collected
+  started_for_inventory: false
+  final_status: running
+  snapshot: ansible-cfg/snapshots/lxc/112-CodeRunner
+  manual_package_count: 381
+  package_count: 1507
+  running_service_count: 17
+  enabled_service_count: 21
+  listening_socket_count: 8
+  docker_container_count: 0
+  docker_image_count: 4

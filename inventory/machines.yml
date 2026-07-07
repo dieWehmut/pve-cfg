@@ -5,8 +5,10 @@ machines:
       kind: lxc
       name: OpenWrt
       status: running
+      initial_status: running
       pve_host: dieSehnsucht
-      os: OpenWrt
+      os: "OpenWrt 23.05.3"
+      os_id: openwrt
       managed_by: pve-cfg/openwrt
       vlan: null
       zone: null
@@ -19,12 +21,27 @@ machines:
       rootfs: "local-lvm:vm-100-disk-1,size=1G"
       memory_mb: 512
       cores: 2
+      guest_inventory: 
+      collected_at: 2026-07-07
+      inspection_status: collected
+      started_for_inventory: false
+      final_status: running
+      snapshot: ansible-cfg/snapshots/lxc/100-OpenWrt
+      manual_package_count: 177
+      package_count: 177
+      running_service_count: 0
+      enabled_service_count: 0
+      listening_socket_count: 80
+      docker_container_count: 0
+      docker_image_count: 0
     - id: 101
       kind: lxc
       name: Nginx
       status: running
+      initial_status: running
       pve_host: dieSehnsucht
-      os: debian
+      os: "Debian GNU/Linux 12 (bookworm)"
+      os_id: debian
       managed_by: ansible-cfg
       vlan: 30
       zone: nginx_zone
@@ -37,12 +54,27 @@ machines:
       rootfs: "local-lvm:vm-101-disk-0,size=10G"
       memory_mb: 512
       cores: 1
+      guest_inventory: 
+      collected_at: 2026-07-07
+      inspection_status: collected
+      started_for_inventory: false
+      final_status: running
+      snapshot: ansible-cfg/snapshots/lxc/101-Nginx
+      manual_package_count: 272
+      package_count: 276
+      running_service_count: 14
+      enabled_service_count: 17
+      listening_socket_count: 5
+      docker_container_count: 0
+      docker_image_count: 0
     - id: 102
       kind: lxc
       name: Tunnel
       status: running
+      initial_status: running
       pve_host: dieSehnsucht
-      os: debian
+      os: "Debian GNU/Linux 12 (bookworm)"
+      os_id: debian
       managed_by: ansible-cfg
       vlan: 40
       zone: tunnel_zone
@@ -55,17 +87,32 @@ machines:
       rootfs: "local-lvm:vm-102-disk-0,size=2G"
       memory_mb: 256
       cores: 1
+      guest_inventory: 
+      collected_at: 2026-07-07
+      inspection_status: collected
+      started_for_inventory: false
+      final_status: running
+      snapshot: ansible-cfg/snapshots/lxc/102-Tunnel
+      manual_package_count: 270
+      package_count: 271
+      running_service_count: 13
+      enabled_service_count: 16
+      listening_socket_count: 4
+      docker_container_count: 0
+      docker_image_count: 0
     - id: 103
       kind: lxc
       name: Monitor
       status: stopped
+      initial_status: stopped
       pve_host: dieSehnsucht
-      os: debian
-      managed_by: pve-cfg
+      os: "Debian GNU/Linux 12 (bookworm)"
+      os_id: debian
+      managed_by: ansible-cfg
       vlan: 60
       zone: monitor_zone
       address_configured: 192.168.60.2/24
-      address_observed: null
+      address_observed: 192.168.60.2/24
       gateway: 192.168.60.1
       bridge: vmbr0
       onboot: false
@@ -73,17 +120,32 @@ machines:
       rootfs: "local-lvm:vm-103-disk-0,size=20G"
       memory_mb: 1024
       cores: 4
+      guest_inventory: 
+      collected_at: 2026-07-07
+      inspection_status: collected
+      started_for_inventory: true
+      final_status: stopped
+      snapshot: ansible-cfg/snapshots/lxc/103-Monitor
+      manual_package_count: 273
+      package_count: 349
+      running_service_count: 14
+      enabled_service_count: 19
+      listening_socket_count: 12
+      docker_container_count: 1
+      docker_image_count: 1
     - id: 104
       kind: lxc
       name: Jenkins
       status: stopped
+      initial_status: stopped
       pve_host: dieSehnsucht
-      os: debian
-      managed_by: pve-cfg
+      os: "Debian GNU/Linux 12 (bookworm)"
+      os_id: debian
+      managed_by: ansible-cfg
       vlan: 100
       zone: cicd_zone
       address_configured: 192.168.100.2/24
-      address_observed: null
+      address_observed: 192.168.100.2/24
       gateway: 192.168.100.1
       bridge: vmbr0
       onboot: false
@@ -91,17 +153,32 @@ machines:
       rootfs: "local-lvm:vm-104-disk-0,size=200G"
       memory_mb: 4096
       cores: 4
+      guest_inventory: 
+      collected_at: 2026-07-07
+      inspection_status: collected
+      started_for_inventory: true
+      final_status: stopped
+      snapshot: ansible-cfg/snapshots/lxc/104-Jenkins
+      manual_package_count: 280
+      package_count: 350
+      running_service_count: 14
+      enabled_service_count: 19
+      listening_socket_count: 5
+      docker_container_count: 0
+      docker_image_count: 70
     - id: 105
       kind: lxc
       name: Gitlab
       status: stopped
+      initial_status: stopped
       pve_host: dieSehnsucht
-      os: debian
-      managed_by: pve-cfg
+      os: "Debian GNU/Linux 12 (bookworm)"
+      os_id: debian
+      managed_by: ansible-cfg
       vlan: 110
       zone: git_zone
       address_configured: 192.168.110.2/24
-      address_observed: null
+      address_observed: 192.168.110.2/24
       gateway: 192.168.110.1
       bridge: vmbr0
       onboot: false
@@ -109,17 +186,32 @@ machines:
       rootfs: "local-lvm:vm-105-disk-0,size=100G"
       memory_mb: 16384
       cores: 4
+      guest_inventory: 
+      collected_at: 2026-07-07
+      inspection_status: collected
+      started_for_inventory: true
+      final_status: stopped
+      snapshot: ansible-cfg/snapshots/lxc/105-Gitlab
+      manual_package_count: 271
+      package_count: 285
+      running_service_count: 12
+      enabled_service_count: 15
+      listening_socket_count: 22
+      docker_container_count: 0
+      docker_image_count: 0
     - id: 106
       kind: lxc
       name: Coolify
       status: stopped
+      initial_status: stopped
       pve_host: dieSehnsucht
-      os: debian
-      managed_by: pve-cfg
+      os: "Debian GNU/Linux 12 (bookworm)"
+      os_id: debian
+      managed_by: ansible-cfg
       vlan: 100
       zone: cicd_zone
       address_configured: 192.168.100.3/24
-      address_observed: null
+      address_observed: 192.168.100.3/24
       gateway: 192.168.100.1
       bridge: vmbr0
       onboot: false
@@ -127,17 +219,32 @@ machines:
       rootfs: "local-lvm:vm-106-disk-0,size=100G"
       memory_mb: 8192
       cores: 4
+      guest_inventory: 
+      collected_at: 2026-07-07
+      inspection_status: collected
+      started_for_inventory: true
+      final_status: stopped
+      snapshot: ansible-cfg/snapshots/lxc/106-Coolify
+      manual_package_count: 278
+      package_count: 297
+      running_service_count: 14
+      enabled_service_count: 17
+      listening_socket_count: 17
+      docker_container_count: 6
+      docker_image_count: 10
     - id: 107
       kind: lxc
       name: Gitea
       status: stopped
+      initial_status: stopped
       pve_host: dieSehnsucht
-      os: debian
-      managed_by: pve-cfg
+      os: "Debian GNU/Linux 12 (bookworm)"
+      os_id: debian
+      managed_by: ansible-cfg
       vlan: 110
       zone: git_zone
       address_configured: 192.168.110.3/24
-      address_observed: null
+      address_observed: 192.168.110.3/24
       gateway: 192.168.110.1
       bridge: vmbr0
       onboot: false
@@ -145,17 +252,32 @@ machines:
       rootfs: "local-lvm:vm-107-disk-0,size=50G"
       memory_mb: 4096
       cores: 2
+      guest_inventory: 
+      collected_at: 2026-07-07
+      inspection_status: collected
+      started_for_inventory: true
+      final_status: stopped
+      snapshot: ansible-cfg/snapshots/lxc/107-Gitea
+      manual_package_count: 271
+      package_count: 327
+      running_service_count: 13
+      enabled_service_count: 17
+      listening_socket_count: 8
+      docker_container_count: 1
+      docker_image_count: 1
     - id: 108
       kind: lxc
       name: Mirror
       status: stopped
+      initial_status: stopped
       pve_host: dieSehnsucht
-      os: debian
-      managed_by: pve-cfg
+      os: "Debian GNU/Linux 12 (bookworm)"
+      os_id: debian
+      managed_by: ansible-cfg
       vlan: 30
       zone: nginx_zone
       address_configured: 192.168.30.3/24
-      address_observed: null
+      address_observed: 192.168.30.3/24
       gateway: 192.168.30.1
       bridge: vmbr0
       onboot: false
@@ -163,17 +285,32 @@ machines:
       rootfs: "local-lvm:vm-108-disk-0,size=10G"
       memory_mb: 512
       cores: 1
+      guest_inventory: 
+      collected_at: 2026-07-07
+      inspection_status: collected
+      started_for_inventory: true
+      final_status: stopped
+      snapshot: ansible-cfg/snapshots/lxc/108-Mirror
+      manual_package_count: 269
+      package_count: 270
+      running_service_count: 12
+      enabled_service_count: 15
+      listening_socket_count: 4
+      docker_container_count: 0
+      docker_image_count: 0
     - id: 109
       kind: lxc
       name: NextCloud
       status: stopped
+      initial_status: stopped
       pve_host: dieSehnsucht
-      os: debian
-      managed_by: pve-cfg
+      os: "Debian GNU/Linux 12 (bookworm)"
+      os_id: debian
+      managed_by: ansible-cfg
       vlan: 50
       zone: app_zone
       address_configured: 192.168.50.8/24
-      address_observed: null
+      address_observed: 192.168.50.8/24
       gateway: 192.168.50.1
       bridge: vmbr0
       onboot: false
@@ -181,17 +318,32 @@ machines:
       rootfs: "local-lvm:vm-109-disk-0,size=50G"
       memory_mb: 4096
       cores: 4
+      guest_inventory: 
+      collected_at: 2026-07-07
+      inspection_status: collected
+      started_for_inventory: true
+      final_status: stopped
+      snapshot: ansible-cfg/snapshots/lxc/109-NextCloud
+      manual_package_count: 281
+      package_count: 305
+      running_service_count: 13
+      enabled_service_count: 18
+      listening_socket_count: 5
+      docker_container_count: 3
+      docker_image_count: 3
     - id: 110
       kind: lxc
       name: Plex
       status: stopped
+      initial_status: stopped
       pve_host: dieSehnsucht
-      os: debian
-      managed_by: pve-cfg
+      os: "Debian GNU/Linux 12 (bookworm)"
+      os_id: debian
+      managed_by: ansible-cfg
       vlan: 120
       zone: media_zone
       address_configured: 192.168.120.2/24
-      address_observed: null
+      address_observed: 192.168.120.2/24
       gateway: 192.168.120.1
       bridge: vmbr0
       onboot: false
@@ -199,17 +351,32 @@ machines:
       rootfs: "local-lvm:vm-110-disk-0,size=9G"
       memory_mb: 4096
       cores: 2
+      guest_inventory: 
+      collected_at: 2026-07-07
+      inspection_status: collected
+      started_for_inventory: true
+      final_status: stopped
+      snapshot: ansible-cfg/snapshots/lxc/110-Plex
+      manual_package_count: 280
+      package_count: 305
+      running_service_count: 13
+      enabled_service_count: 17
+      listening_socket_count: 23
+      docker_container_count: 1
+      docker_image_count: 1
     - id: 111
       kind: lxc
       name: Navidrome
       status: stopped
+      initial_status: stopped
       pve_host: dieSehnsucht
-      os: debian
-      managed_by: pve-cfg
+      os: "Debian GNU/Linux 12 (bookworm)"
+      os_id: debian
+      managed_by: ansible-cfg
       vlan: 120
       zone: media_zone
       address_configured: 192.168.120.3/24
-      address_observed: null
+      address_observed: 192.168.120.3/24
       gateway: 192.168.120.1
       bridge: vmbr0
       onboot: false
@@ -217,12 +384,27 @@ machines:
       rootfs: "local-lvm:vm-111-disk-0,size=10G"
       memory_mb: 512
       cores: 1
+      guest_inventory: 
+      collected_at: 2026-07-07
+      inspection_status: collected
+      started_for_inventory: true
+      final_status: stopped
+      snapshot: ansible-cfg/snapshots/lxc/111-Navidrome
+      manual_package_count: 280
+      package_count: 304
+      running_service_count: 13
+      enabled_service_count: 18
+      listening_socket_count: 5
+      docker_container_count: 1
+      docker_image_count: 1
     - id: 112
       kind: lxc
       name: CodeRunner
       status: running
+      initial_status: running
       pve_host: dieSehnsucht
-      os: debian
+      os: "Debian GNU/Linux 12 (bookworm)"
+      os_id: debian
       managed_by: ansible-cfg
       vlan: 50
       zone: app_zone
@@ -235,12 +417,27 @@ machines:
       rootfs: "local-lvm:vm-112-disk-0,size=310G"
       memory_mb: 8192
       cores: 6
+      guest_inventory: 
+      collected_at: 2026-07-07
+      inspection_status: collected
+      started_for_inventory: false
+      final_status: running
+      snapshot: ansible-cfg/snapshots/lxc/112-CodeRunner
+      manual_package_count: 381
+      package_count: 1507
+      running_service_count: 17
+      enabled_service_count: 21
+      listening_socket_count: 8
+      docker_container_count: 0
+      docker_image_count: 4
     - id: 113
       kind: lxc
       name: Kuma
       status: running
+      initial_status: running
       pve_host: dieSehnsucht
-      os: debian
+      os: "Debian GNU/Linux 12 (bookworm)"
+      os_id: debian
       managed_by: ansible-cfg
       vlan: 60
       zone: monitor_zone
@@ -253,17 +450,32 @@ machines:
       rootfs: "local:113/vm-113-disk-0.raw,size=5G"
       memory_mb: 512
       cores: 1
+      guest_inventory: 
+      collected_at: 2026-07-07
+      inspection_status: collected
+      started_for_inventory: false
+      final_status: running
+      snapshot: ansible-cfg/snapshots/lxc/113-Kuma
+      manual_package_count: 277
+      package_count: 288
+      running_service_count: 13
+      enabled_service_count: 17
+      listening_socket_count: 5
+      docker_container_count: 1
+      docker_image_count: 1
     - id: 114
       kind: lxc
       name: VSCode
       status: stopped
+      initial_status: stopped
       pve_host: dieSehnsucht
-      os: debian
-      managed_by: pve-cfg
+      os: "Debian GNU/Linux 12 (bookworm)"
+      os_id: debian
+      managed_by: ansible-cfg
       vlan: 50
       zone: app_zone
       address_configured: 192.168.50.12/24
-      address_observed: null
+      address_observed: 192.168.50.12/24
       gateway: 192.168.50.1
       bridge: vmbr0
       onboot: false
@@ -271,12 +483,27 @@ machines:
       rootfs: "local-lvm:vm-114-disk-0,size=20G"
       memory_mb: 8192
       cores: 4
+      guest_inventory: 
+      collected_at: 2026-07-07
+      inspection_status: collected
+      started_for_inventory: true
+      final_status: stopped
+      snapshot: ansible-cfg/snapshots/lxc/114-VSCode
+      manual_package_count: 279
+      package_count: 291
+      running_service_count: 14
+      enabled_service_count: 17
+      listening_socket_count: 4
+      docker_container_count: 0
+      docker_image_count: 0
     - id: 115
       kind: lxc
       name: Coder
       status: running
+      initial_status: running
       pve_host: dieSehnsucht
-      os: debian
+      os: "Debian GNU/Linux 12 (bookworm)"
+      os_id: debian
       managed_by: ansible-cfg
       vlan: 50
       zone: app_zone
@@ -289,17 +516,32 @@ machines:
       rootfs: "local-lvm:vm-115-disk-0,size=10G"
       memory_mb: 2048
       cores: 2
+      guest_inventory: 
+      collected_at: 2026-07-07
+      inspection_status: collected
+      started_for_inventory: false
+      final_status: running
+      snapshot: ansible-cfg/snapshots/lxc/115-Coder
+      manual_package_count: 279
+      package_count: 290
+      running_service_count: 13
+      enabled_service_count: 17
+      listening_socket_count: 8
+      docker_container_count: 0
+      docker_image_count: 0
     - id: 146
       kind: lxc
       name: tyz
       status: stopped
+      initial_status: stopped
       pve_host: dieSehnsucht
-      os: debian
-      managed_by: pve-cfg
+      os: "Debian GNU/Linux 12 (bookworm)"
+      os_id: debian
+      managed_by: ansible-cfg
       vlan: 66
       zone: user_zone
       address_configured: 192.168.66.5/24
-      address_observed: null
+      address_observed: 192.168.66.5/24
       gateway: 192.168.66.1
       bridge: vmbr0
       onboot: false
@@ -307,17 +549,32 @@ machines:
       rootfs: "local-lvm:vm-146-disk-0,size=20G"
       memory_mb: 4096
       cores: 2
+      guest_inventory: 
+      collected_at: 2026-07-07
+      inspection_status: collected
+      started_for_inventory: true
+      final_status: stopped
+      snapshot: ansible-cfg/snapshots/lxc/146-tyz
+      manual_package_count: 269
+      package_count: 270
+      running_service_count: 11
+      enabled_service_count: 14
+      listening_socket_count: 3
+      docker_container_count: 0
+      docker_image_count: 0
     - id: 147
       kind: lxc
       name: lyf
       status: stopped
+      initial_status: stopped
       pve_host: dieSehnsucht
-      os: debian
-      managed_by: pve-cfg
+      os: "Debian GNU/Linux 12 (bookworm)"
+      os_id: debian
+      managed_by: ansible-cfg
       vlan: 66
       zone: user_zone
       address_configured: 192.168.66.4/24
-      address_observed: null
+      address_observed: 192.168.66.4/24
       gateway: 192.168.66.1
       bridge: vmbr0
       onboot: false
@@ -325,17 +582,32 @@ machines:
       rootfs: "local-lvm:vm-147-disk-0,size=20G"
       memory_mb: 4096
       cores: 2
+      guest_inventory: 
+      collected_at: 2026-07-07
+      inspection_status: collected
+      started_for_inventory: true
+      final_status: stopped
+      snapshot: ansible-cfg/snapshots/lxc/147-lyf
+      manual_package_count: 269
+      package_count: 270
+      running_service_count: 11
+      enabled_service_count: 14
+      listening_socket_count: 3
+      docker_container_count: 0
+      docker_image_count: 0
     - id: 148
       kind: lxc
       name: sty
       status: stopped
+      initial_status: stopped
       pve_host: dieSehnsucht
-      os: debian
-      managed_by: pve-cfg
+      os: "Debian GNU/Linux 12 (bookworm)"
+      os_id: debian
+      managed_by: ansible-cfg
       vlan: 66
       zone: user_zone
       address_configured: 192.168.66.3/24
-      address_observed: null
+      address_observed: 192.168.66.3/24
       gateway: 192.168.66.1
       bridge: vmbr0
       onboot: false
@@ -343,17 +615,32 @@ machines:
       rootfs: "local-lvm:vm-148-disk-0,size=40G"
       memory_mb: 4096
       cores: 2
+      guest_inventory: 
+      collected_at: 2026-07-07
+      inspection_status: collected
+      started_for_inventory: true
+      final_status: stopped
+      snapshot: ansible-cfg/snapshots/lxc/148-sty
+      manual_package_count: 270
+      package_count: 284
+      running_service_count: 11
+      enabled_service_count: 14
+      listening_socket_count: 3
+      docker_container_count: 0
+      docker_image_count: 0
     - id: 149
       kind: lxc
       name: test
       status: stopped
+      initial_status: stopped
       pve_host: dieSehnsucht
-      os: debian
-      managed_by: pve-cfg
+      os: "Debian GNU/Linux 12 (bookworm)"
+      os_id: debian
+      managed_by: ansible-cfg
       vlan: 66
       zone: user_zone
       address_configured: 192.168.66.2/24
-      address_observed: null
+      address_observed: 192.168.66.2/24
       gateway: 192.168.66.1
       bridge: vmbr0
       onboot: false
@@ -361,17 +648,32 @@ machines:
       rootfs: "local-lvm:vm-149-disk-0,size=5G"
       memory_mb: 512
       cores: 1
+      guest_inventory: 
+      collected_at: 2026-07-07
+      inspection_status: collected
+      started_for_inventory: true
+      final_status: stopped
+      snapshot: ansible-cfg/snapshots/lxc/149-test
+      manual_package_count: 268
+      package_count: 269
+      running_service_count: 11
+      enabled_service_count: 14
+      listening_socket_count: 3
+      docker_container_count: 0
+      docker_image_count: 0
     - id: 150
       kind: lxc
       name: Monogatari
       status: stopped
+      initial_status: stopped
       pve_host: dieSehnsucht
-      os: debian
-      managed_by: pve-cfg
+      os: "Debian GNU/Linux 12 (bookworm)"
+      os_id: debian
+      managed_by: ansible-cfg
       vlan: 50
       zone: app_zone
       address_configured: 192.168.50.2/24
-      address_observed: null
+      address_observed: 192.168.50.2/24
       gateway: 192.168.50.1
       bridge: vmbr0
       onboot: false
@@ -379,17 +681,32 @@ machines:
       rootfs: "local-lvm:vm-150-disk-0,size=10G"
       memory_mb: 512
       cores: 1
+      guest_inventory: 
+      collected_at: 2026-07-07
+      inspection_status: collected
+      started_for_inventory: true
+      final_status: stopped
+      snapshot: ansible-cfg/snapshots/lxc/150-Monogatari
+      manual_package_count: 278
+      package_count: 308
+      running_service_count: 13
+      enabled_service_count: 17
+      listening_socket_count: 3
+      docker_container_count: 0
+      docker_image_count: 2
     - id: 151
       kind: lxc
       name: edu-ai
       status: stopped
+      initial_status: stopped
       pve_host: dieSehnsucht
-      os: debian
-      managed_by: pve-cfg
+      os: "Debian GNU/Linux 12 (bookworm)"
+      os_id: debian
+      managed_by: ansible-cfg
       vlan: 50
       zone: app_zone
       address_configured: 192.168.50.3/24
-      address_observed: null
+      address_observed: 192.168.50.3/24
       gateway: 192.168.50.1
       bridge: vmbr0
       onboot: false
@@ -397,12 +714,27 @@ machines:
       rootfs: "local-lvm:vm-151-disk-0,size=260G"
       memory_mb: 8192
       cores: 6
+      guest_inventory: 
+      collected_at: 2026-07-07
+      inspection_status: collected
+      started_for_inventory: true
+      final_status: stopped
+      snapshot: ansible-cfg/snapshots/lxc/151-edu-ai
+      manual_package_count: 306
+      package_count: 455
+      running_service_count: 13
+      enabled_service_count: 17
+      listening_socket_count: 7
+      docker_container_count: 6
+      docker_image_count: 66
     - id: 152
       kind: lxc
       name: bot-diesw
       status: running
+      initial_status: running
       pve_host: dieSehnsucht
-      os: debian
+      os: "Debian GNU/Linux 12 (bookworm)"
+      os_id: debian
       managed_by: ansible-cfg
       vlan: 50
       zone: app_zone
@@ -415,12 +747,27 @@ machines:
       rootfs: "local-lvm:vm-152-disk-0,size=20G"
       memory_mb: 4096
       cores: 4
+      guest_inventory: 
+      collected_at: 2026-07-07
+      inspection_status: collected
+      started_for_inventory: false
+      final_status: running
+      snapshot: ansible-cfg/snapshots/lxc/152-bot-diesw
+      manual_package_count: 323
+      package_count: 1084
+      running_service_count: 15
+      enabled_service_count: 17
+      listening_socket_count: 13
+      docker_container_count: 0
+      docker_image_count: 0
     - id: 153
       kind: lxc
       name: bot-desuwa
       status: running
+      initial_status: running
       pve_host: dieSehnsucht
-      os: debian
+      os: "Debian GNU/Linux 12 (bookworm)"
+      os_id: debian
       managed_by: ansible-cfg
       vlan: 50
       zone: app_zone
@@ -433,17 +780,32 @@ machines:
       rootfs: "local-lvm:vm-153-disk-0,size=20G"
       memory_mb: 4096
       cores: 4
+      guest_inventory: 
+      collected_at: 2026-07-07
+      inspection_status: collected
+      started_for_inventory: false
+      final_status: running
+      snapshot: ansible-cfg/snapshots/lxc/153-bot-desuwa
+      manual_package_count: 322
+      package_count: 1083
+      running_service_count: 13
+      enabled_service_count: 17
+      listening_socket_count: 14
+      docker_container_count: 0
+      docker_image_count: 0
     - id: 154
       kind: lxc
       name: pan
       status: stopped
+      initial_status: stopped
       pve_host: dieSehnsucht
-      os: debian
-      managed_by: pve-cfg
+      os: "Debian GNU/Linux 12 (bookworm)"
+      os_id: debian
+      managed_by: ansible-cfg
       vlan: 80
       zone: storage_zone
       address_configured: 192.168.80.3/24
-      address_observed: null
+      address_observed: 192.168.80.3/24
       gateway: 192.168.80.1
       bridge: vmbr0
       onboot: false
@@ -451,17 +813,32 @@ machines:
       rootfs: "local-lvm:vm-154-disk-0,size=10G"
       memory_mb: 256
       cores: 1
+      guest_inventory: 
+      collected_at: 2026-07-07
+      inspection_status: collected
+      started_for_inventory: true
+      final_status: stopped
+      snapshot: ansible-cfg/snapshots/lxc/154-pan
+      manual_package_count: 275
+      package_count: 306
+      running_service_count: 13
+      enabled_service_count: 17
+      listening_socket_count: 7
+      docker_container_count: 1
+      docker_image_count: 1
     - id: 155
       kind: lxc
       name: LiteratureReview
       status: stopped
+      initial_status: stopped
       pve_host: dieSehnsucht
-      os: debian
-      managed_by: pve-cfg
+      os: "Debian GNU/Linux 12 (bookworm)"
+      os_id: debian
+      managed_by: ansible-cfg
       vlan: 50
       zone: app_zone
       address_configured: 192.168.50.6/24
-      address_observed: null
+      address_observed: 192.168.50.6/24
       gateway: 192.168.50.1
       bridge: vmbr0
       onboot: false
@@ -469,17 +846,32 @@ machines:
       rootfs: "local-lvm:vm-155-disk-0,size=50G"
       memory_mb: 4096
       cores: 2
+      guest_inventory: 
+      collected_at: 2026-07-07
+      inspection_status: collected
+      started_for_inventory: true
+      final_status: stopped
+      snapshot: ansible-cfg/snapshots/lxc/155-LiteratureReview
+      manual_package_count: 270
+      package_count: 323
+      running_service_count: 13
+      enabled_service_count: 17
+      listening_socket_count: 6
+      docker_container_count: 1
+      docker_image_count: 37
     - id: 156
       kind: lxc
       name: seiii-eval
       status: stopped
+      initial_status: stopped
       pve_host: dieSehnsucht
-      os: debian
-      managed_by: pve-cfg
+      os: "Debian GNU/Linux 12 (bookworm)"
+      os_id: debian
+      managed_by: ansible-cfg
       vlan: 50
       zone: app_zone
       address_configured: 192.168.50.7/24
-      address_observed: null
+      address_observed: 192.168.50.7/24
       gateway: 192.168.50.1
       bridge: vmbr0
       onboot: false
@@ -487,17 +879,32 @@ machines:
       rootfs: "local-lvm:vm-156-disk-0,size=30G"
       memory_mb: 4096
       cores: 2
+      guest_inventory: 
+      collected_at: 2026-07-07
+      inspection_status: collected
+      started_for_inventory: true
+      final_status: stopped
+      snapshot: ansible-cfg/snapshots/lxc/156-seiii-eval
+      manual_package_count: 269
+      package_count: 303
+      running_service_count: 13
+      enabled_service_count: 17
+      listening_socket_count: 6
+      docker_container_count: 1
+      docker_image_count: 4
     - id: 157
       kind: lxc
       name: CodexManager
       status: stopped
+      initial_status: stopped
       pve_host: dieSehnsucht
-      os: debian
-      managed_by: pve-cfg
+      os: "Debian GNU/Linux 12 (bookworm)"
+      os_id: debian
+      managed_by: ansible-cfg
       vlan: 50
       zone: app_zone
       address_configured: 192.168.50.9/24
-      address_observed: null
+      address_observed: 192.168.50.9/24
       gateway: 192.168.50.1
       bridge: vmbr0
       onboot: false
@@ -505,17 +912,32 @@ machines:
       rootfs: "local-lvm:vm-157-disk-0,size=10G"
       memory_mb: 512
       cores: 1
+      guest_inventory: 
+      collected_at: 2026-07-07
+      inspection_status: collected
+      started_for_inventory: true
+      final_status: stopped
+      snapshot: ansible-cfg/snapshots/lxc/157-CodexManager
+      manual_package_count: 280
+      package_count: 306
+      running_service_count: 15
+      enabled_service_count: 19
+      listening_socket_count: 9
+      docker_container_count: 0
+      docker_image_count: 0
     - id: 158
       kind: lxc
       name: sub2api
       status: stopped
+      initial_status: stopped
       pve_host: dieSehnsucht
-      os: debian
-      managed_by: pve-cfg
+      os: "Debian GNU/Linux 12 (bookworm)"
+      os_id: debian
+      managed_by: ansible-cfg
       vlan: 50
       zone: app_zone
       address_configured: 192.168.50.10/24
-      address_observed: null
+      address_observed: 192.168.50.10/24
       gateway: 192.168.50.1
       bridge: vmbr0
       onboot: false
@@ -523,6 +945,19 @@ machines:
       rootfs: "local-lvm:vm-158-disk-0,size=10G"
       memory_mb: 2048
       cores: 4
+      guest_inventory: 
+      collected_at: 2026-07-07
+      inspection_status: collected
+      started_for_inventory: true
+      final_status: stopped
+      snapshot: ansible-cfg/snapshots/lxc/158-sub2api
+      manual_package_count: 280
+      package_count: 304
+      running_service_count: 13
+      enabled_service_count: 17
+      listening_socket_count: 4
+      docker_container_count: 3
+      docker_image_count: 3
     - id: 197
       kind: vm
       name: NixOS
@@ -575,13 +1010,15 @@ machines:
       kind: lxc
       name: seiii
       status: stopped
+      initial_status: stopped
       pve_host: dieSehnsucht
-      os: debian
-      managed_by: pve-cfg
+      os: "Debian GNU/Linux 12 (bookworm)"
+      os_id: debian
+      managed_by: ansible-cfg
       vlan: 67
       zone: group_zone
       address_configured: 192.168.67.2/24
-      address_observed: null
+      address_observed: 192.168.67.2/24
       gateway: 192.168.67.1
       bridge: vmbr0
       onboot: false
@@ -589,17 +1026,32 @@ machines:
       rootfs: "local-lvm:vm-200-disk-0,size=50G"
       memory_mb: 4096
       cores: 2
+      guest_inventory: 
+      collected_at: 2026-07-07
+      inspection_status: collected
+      started_for_inventory: true
+      final_status: stopped
+      snapshot: ansible-cfg/snapshots/lxc/200-seiii
+      manual_package_count: 275
+      package_count: 897
+      running_service_count: 14
+      enabled_service_count: 19
+      listening_socket_count: 5
+      docker_container_count: 0
+      docker_image_count: 3
     - id: 300
       kind: lxc
       name: PostgreSQL
       status: stopped
+      initial_status: stopped
       pve_host: dieSehnsucht
-      os: debian
-      managed_by: pve-cfg
+      os: "Debian GNU/Linux 12 (bookworm)"
+      os_id: debian
+      managed_by: ansible-cfg
       vlan: 90
       zone: db_zone
       address_configured: 192.168.90.2/24
-      address_observed: null
+      address_observed: 192.168.90.2/24
       gateway: 192.168.90.1
       bridge: vmbr0
       onboot: false
@@ -607,17 +1059,32 @@ machines:
       rootfs: "local-lvm:vm-300-disk-0,size=10G"
       memory_mb: 512
       cores: 1
+      guest_inventory: 
+      collected_at: 2026-07-07
+      inspection_status: collected
+      started_for_inventory: true
+      final_status: stopped
+      snapshot: ansible-cfg/snapshots/lxc/300-PostgreSQL
+      manual_package_count: 269
+      package_count: 285
+      running_service_count: 12
+      enabled_service_count: 15
+      listening_socket_count: 5
+      docker_container_count: 0
+      docker_image_count: 0
     - id: 301
       kind: lxc
       name: Redis
       status: stopped
+      initial_status: stopped
       pve_host: dieSehnsucht
-      os: debian
-      managed_by: pve-cfg
+      os: "Debian GNU/Linux 12 (bookworm)"
+      os_id: debian
+      managed_by: ansible-cfg
       vlan: 90
       zone: db_zone
       address_configured: 192.168.90.3/24
-      address_observed: null
+      address_observed: 192.168.90.3/24
       gateway: 192.168.90.1
       bridge: vmbr0
       onboot: false
@@ -625,17 +1092,32 @@ machines:
       rootfs: "local-lvm:vm-301-disk-0,size=10G"
       memory_mb: 512
       cores: 1
+      guest_inventory: 
+      collected_at: 2026-07-07
+      inspection_status: collected
+      started_for_inventory: true
+      final_status: stopped
+      snapshot: ansible-cfg/snapshots/lxc/301-Redis
+      manual_package_count: 269
+      package_count: 273
+      running_service_count: 12
+      enabled_service_count: 15
+      listening_socket_count: 5
+      docker_container_count: 0
+      docker_image_count: 0
     - id: 302
       kind: lxc
       name: MySQL
       status: stopped
+      initial_status: stopped
       pve_host: dieSehnsucht
-      os: debian
-      managed_by: pve-cfg
+      os: "Debian GNU/Linux 12 (bookworm)"
+      os_id: debian
+      managed_by: ansible-cfg
       vlan: 90
       zone: db_zone
       address_configured: 192.168.90.4/24
-      address_observed: null
+      address_observed: 192.168.90.4/24
       gateway: 192.168.90.1
       bridge: vmbr0
       onboot: false
@@ -643,3 +1125,16 @@ machines:
       rootfs: "local-lvm:vm-302-disk-0,size=10G"
       memory_mb: 512
       cores: 1
+      guest_inventory: 
+      collected_at: 2026-07-07
+      inspection_status: collected
+      started_for_inventory: true
+      final_status: stopped
+      snapshot: ansible-cfg/snapshots/lxc/302-MySQL
+      manual_package_count: 269
+      package_count: 316
+      running_service_count: 12
+      enabled_service_count: 15
+      listening_socket_count: 4
+      docker_container_count: 0
+      docker_image_count: 0

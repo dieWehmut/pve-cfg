@@ -2,13 +2,15 @@ id: 108
 kind: lxc
 name: Mirror
 status: stopped
+initial_status: stopped
 pve_host: dieSehnsucht
-os: debian
-managed_by: pve-cfg
+os: "Debian GNU/Linux 12 (bookworm)"
+os_id: debian
+managed_by: ansible-cfg
 vlan: 30
 zone: nginx_zone
 address_configured: 192.168.30.3/24
-address_observed: null
+address_observed: 192.168.30.3/24
 gateway: 192.168.30.1
 bridge: vmbr0
 onboot: false
@@ -16,3 +18,16 @@ unprivileged: true
 rootfs: "local-lvm:vm-108-disk-0,size=10G"
 memory_mb: 512
 cores: 1
+guest_inventory: 
+  collected_at: 2026-07-07
+  inspection_status: collected
+  started_for_inventory: true
+  final_status: stopped
+  snapshot: ansible-cfg/snapshots/lxc/108-Mirror
+  manual_package_count: 269
+  package_count: 270
+  running_service_count: 12
+  enabled_service_count: 15
+  listening_socket_count: 4
+  docker_container_count: 0
+  docker_image_count: 0

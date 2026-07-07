@@ -1,0 +1,50 @@
+ctid: 157
+name: CodexManager
+collected_at: 2026-07-07
+initial_status: stopped
+final_status: stopped
+started_for_inventory: true
+inspection_status: collected
+snapshot_repository: ansible-cfg
+snapshot_path: snapshots/lxc/157-CodexManager
+files: 
+  - apt-sources.txt
+  - config-paths.txt
+  - cron.txt
+  - df.txt
+  - docker-compose-ls.txt
+  - docker-images.txt
+  - docker-ps.txt
+  - enabled-services.txt
+  - fstab.txt
+  - hostname.txt
+  - ip-address.txt
+  - ip-route.txt
+  - listening.txt
+  - manual-packages.txt
+  - meta.env
+  - mounts.txt
+  - openwrt-uci.txt
+  - os-release.txt
+  - packages.txt
+  - pve-config.txt
+  - resolv.conf.txt
+  - running-services.txt
+  - start.log
+  - stop.log
+  - systemd-unit-files.txt
+  - timers.txt
+  - uname.txt
+counts: 
+  collected_at: 2026-07-07
+  inspection_status: collected
+  started_for_inventory: true
+  final_status: stopped
+  snapshot: ansible-cfg/snapshots/lxc/157-CodexManager
+  manual_package_count: 280
+  package_count: 306
+  running_service_count: 15
+  enabled_service_count: 19
+  listening_socket_count: 9
+  docker_container_count: 0
+  docker_image_count: 0

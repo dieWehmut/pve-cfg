@@ -2,13 +2,15 @@ id: 109
 kind: lxc
 name: NextCloud
 status: stopped
+initial_status: stopped
 pve_host: dieSehnsucht
-os: debian
-managed_by: pve-cfg
+os: "Debian GNU/Linux 12 (bookworm)"
+os_id: debian
+managed_by: ansible-cfg
 vlan: 50
 zone: app_zone
 address_configured: 192.168.50.8/24
-address_observed: null
+address_observed: 192.168.50.8/24
 gateway: 192.168.50.1
 bridge: vmbr0
 onboot: false
@@ -16,3 +18,16 @@ unprivileged: true
 rootfs: "local-lvm:vm-109-disk-0,size=50G"
 memory_mb: 4096
 cores: 4
+guest_inventory: 
+  collected_at: 2026-07-07
+  inspection_status: collected
+  started_for_inventory: true
+  final_status: stopped
+  snapshot: ansible-cfg/snapshots/lxc/109-NextCloud
+  manual_package_count: 281
+  package_count: 305
+  running_service_count: 13
+  enabled_service_count: 18
+  listening_socket_count: 5
+  docker_container_count: 3
+  docker_image_count: 3

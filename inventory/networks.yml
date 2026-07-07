@@ -23,12 +23,9 @@ networks:
       device: null
       vlan: null
       proto: wireguard
-      address: 10.254.254.3/32
+      address: null
       gateway: null
       dns: 
-      - 8.8.8.8
-      - 1.1.1.1
-      - 1.1.1.1
       - 8.8.8.8
     - name: nginx_zone
       device: eth1.30

@@ -1,53 +1,50 @@
 # CodeRunner (112)
 
 - Type: LXC
-- PVE status: running
+- PVE status before inventory: running
+- PVE status after inventory: running
+- Started only for inventory: no
 - Managed by: ansible-cfg
+- OS: Debian GNU/Linux 12 (bookworm)
 - Configured address: 192.168.50.11/24
 - Observed address: 192.168.50.11/24
 - VLAN/zone: 50 (app_zone)
+- Detailed snapshot: ansible-cfg/snapshots/lxc/112-CodeRunner
 
-## Runtime Snapshot
+## Snapshot Counts
 
-Collected read-only with `pct exec` on 2026-07-07. Full dependency snapshots for Debian containers are stored in `ansible-cfg/snapshots/`.
+- Manual packages: 381
+- Installed packages: 1507
+- Running services: 17
+- Enabled services: 21
+- Listening sockets: 8
+- Docker containers: 0
+- Docker images: 4
 
-## Running Services
+## Snapshot Files
 
-```text
-  console-getty.service      loaded active running Console Getty
-  container-getty@1.service  loaded active running Container Getty on /dev/tty1
-  container-getty@2.service  loaded active running Container Getty on /dev/tty2
-  containerd.service         loaded active running containerd container runtime
-  cron.service               loaded active running Regular background program processing daemon
-  dbus.service               loaded active running D-Bus System Message Bus
-  docker.service             loaded active running Docker Application Container Engine
-  epmd.service               loaded active running Erlang Port Mapper Daemon
-  nezha-agent.service        loaded active running 哪吒监控 Agent
-  postfix@-.service          loaded active running Postfix Mail Transport Agent (instance -)
-  postgresql@15-main.service loaded active running PostgreSQL Cluster 15-main
-  sandkasten-api.service     loaded active running Sandkasten HTTP and gRPC API
-  sandkasten-laeufer.service loaded active running Sandkasten privileged code runner
-  ssh.service                loaded active running OpenBSD Secure Shell server
-  systemd-journald.service   loaded active running Journal Service
-  systemd-logind.service     loaded active running User Login Management
-  systemd-networkd.service   loaded active running Network Configuration
-```
-
-## Listening Sockets
-
-```text
-Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess
-tcp   LISTEN 0      244        127.0.0.1:5432       0.0.0.0:*    users:(("postgres",pid=221,fd=6))
-tcp   LISTEN 0      100        127.0.0.1:25         0.0.0.0:*    users:(("master",pid=362,fd=13))
-tcp   LISTEN 0      4096       127.0.0.1:50051      0.0.0.0:*    users:(("sandkasten-api",pid=451,fd=7))
-tcp   LISTEN 0      100            [::1]:25            [::]:*    users:(("master",pid=362,fd=14))
-tcp   LISTEN 0      244            [::1]:5432          [::]:*    users:(("postgres",pid=221,fd=5))
-tcp   LISTEN 0      4096               *:22               *:*    users:(("sshd",pid=160,fd=3),("systemd",pid=1,fd=40))
-tcp   LISTEN 0      4096               *:8080             *:*    users:(("sandkasten-api",pid=451,fd=8))
-tcp   LISTEN 0      4096               *:4369             *:*    users:(("epmd",pid=125,fd=3),("systemd",pid=1,fd=39))
-```
-
-## Manual Package Count
-
-381 packages recorded.
-
+- apt-sources.txt
+- config-paths.txt
+- cron.txt
+- df.txt
+- docker-compose-ls.txt
+- docker-images.txt
+- docker-ps.txt
+- enabled-services.txt
+- fstab.txt
+- hostname.txt
+- ip-address.txt
+- ip-route.txt
+- listening.txt
+- manual-packages.txt
+- meta.env
+- mounts.txt
+- openwrt-uci.txt
+- os-release.txt
+- packages.txt
+- pve-config.txt
+- resolv.conf.txt
+- running-services.txt
+- systemd-unit-files.txt
+- timers.txt
+- uname.txt

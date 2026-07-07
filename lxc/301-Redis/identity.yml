@@ -2,13 +2,15 @@ id: 301
 kind: lxc
 name: Redis
 status: stopped
+initial_status: stopped
 pve_host: dieSehnsucht
-os: debian
-managed_by: pve-cfg
+os: "Debian GNU/Linux 12 (bookworm)"
+os_id: debian
+managed_by: ansible-cfg
 vlan: 90
 zone: db_zone
 address_configured: 192.168.90.3/24
-address_observed: null
+address_observed: 192.168.90.3/24
 gateway: 192.168.90.1
 bridge: vmbr0
 onboot: false
@@ -16,3 +18,16 @@ unprivileged: true
 rootfs: "local-lvm:vm-301-disk-0,size=10G"
 memory_mb: 512
 cores: 1
+guest_inventory: 
+  collected_at: 2026-07-07
+  inspection_status: collected
+  started_for_inventory: true
+  final_status: stopped
+  snapshot: ansible-cfg/snapshots/lxc/301-Redis
+  manual_package_count: 269
+  package_count: 273
+  running_service_count: 12
+  enabled_service_count: 15
+  listening_socket_count: 5
+  docker_container_count: 0
+  docker_image_count: 0

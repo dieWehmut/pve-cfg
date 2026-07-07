@@ -2,8 +2,10 @@ id: 113
 kind: lxc
 name: Kuma
 status: running
+initial_status: running
 pve_host: dieSehnsucht
-os: debian
+os: "Debian GNU/Linux 12 (bookworm)"
+os_id: debian
 managed_by: ansible-cfg
 vlan: 60
 zone: monitor_zone
@@ -16,3 +18,16 @@ unprivileged: true
 rootfs: "local:113/vm-113-disk-0.raw,size=5G"
 memory_mb: 512
 cores: 1
+guest_inventory: 
+  collected_at: 2026-07-07
+  inspection_status: collected
+  started_for_inventory: false
+  final_status: running
+  snapshot: ansible-cfg/snapshots/lxc/113-Kuma
+  manual_package_count: 277
+  package_count: 288
+  running_service_count: 13
+  enabled_service_count: 17
+  listening_socket_count: 5
+  docker_container_count: 1
+  docker_image_count: 1

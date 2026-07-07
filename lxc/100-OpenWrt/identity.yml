@@ -2,8 +2,10 @@ id: 100
 kind: lxc
 name: OpenWrt
 status: running
+initial_status: running
 pve_host: dieSehnsucht
-os: OpenWrt
+os: "OpenWrt 23.05.3"
+os_id: openwrt
 managed_by: pve-cfg/openwrt
 vlan: null
 zone: null
@@ -16,3 +18,16 @@ unprivileged: false
 rootfs: "local-lvm:vm-100-disk-1,size=1G"
 memory_mb: 512
 cores: 2
+guest_inventory: 
+  collected_at: 2026-07-07
+  inspection_status: collected
+  started_for_inventory: false
+  final_status: running
+  snapshot: ansible-cfg/snapshots/lxc/100-OpenWrt
+  manual_package_count: 177
+  package_count: 177
+  running_service_count: 0
+  enabled_service_count: 0
+  listening_socket_count: 80
+  docker_container_count: 0
+  docker_image_count: 0

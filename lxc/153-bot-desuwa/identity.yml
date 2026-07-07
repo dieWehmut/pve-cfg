@@ -2,8 +2,10 @@ id: 153
 kind: lxc
 name: bot-desuwa
 status: running
+initial_status: running
 pve_host: dieSehnsucht
-os: debian
+os: "Debian GNU/Linux 12 (bookworm)"
+os_id: debian
 managed_by: ansible-cfg
 vlan: 50
 zone: app_zone
@@ -16,3 +18,16 @@ unprivileged: true
 rootfs: "local-lvm:vm-153-disk-0,size=20G"
 memory_mb: 4096
 cores: 4
+guest_inventory: 
+  collected_at: 2026-07-07
+  inspection_status: collected
+  started_for_inventory: false
+  final_status: running
+  snapshot: ansible-cfg/snapshots/lxc/153-bot-desuwa
+  manual_package_count: 322
+  package_count: 1083
+  running_service_count: 13
+  enabled_service_count: 17
+  listening_socket_count: 14
+  docker_container_count: 0
+  docker_image_count: 0

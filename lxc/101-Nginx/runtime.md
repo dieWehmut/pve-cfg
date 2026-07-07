@@ -1,47 +1,50 @@
 # Nginx (101)
 
 - Type: LXC
-- PVE status: running
+- PVE status before inventory: running
+- PVE status after inventory: running
+- Started only for inventory: no
 - Managed by: ansible-cfg
+- OS: Debian GNU/Linux 12 (bookworm)
 - Configured address: 192.168.30.2/24
 - Observed address: 192.168.30.2/24
 - VLAN/zone: 30 (nginx_zone)
+- Detailed snapshot: ansible-cfg/snapshots/lxc/101-Nginx
 
-## Runtime Snapshot
+## Snapshot Counts
 
-Collected read-only with `pct exec` on 2026-07-07. Full dependency snapshots for Debian containers are stored in `ansible-cfg/snapshots/`.
+- Manual packages: 272
+- Installed packages: 276
+- Running services: 14
+- Enabled services: 17
+- Listening sockets: 5
+- Docker containers: 0
+- Docker images: 0
 
-## Running Services
+## Snapshot Files
 
-```text
-  console-getty.service       loaded active running Console Getty
-  container-getty@1.service   loaded active running Container Getty on /dev/tty1
-  container-getty@2.service   loaded active running Container Getty on /dev/tty2
-  cron.service                loaded active running Regular background program processing daemon
-  dbus.service                loaded active running D-Bus System Message Bus
-  nezha-agent-cca8bee.service loaded active running 哪吒监控 Agent
-  nezha-agent.service         loaded active running 哪吒监控 Agent
-  nginx-ui.service            loaded active running Yet another WebUI for Nginx
-  nginx.service               loaded active running A high performance web server and a reverse proxy server
-  postfix@-.service           loaded active running Postfix Mail Transport Agent (instance -)
-  ssh.service                 loaded active running OpenBSD Secure Shell server
-  systemd-journald.service    loaded active running Journal Service
-  systemd-logind.service      loaded active running User Login Management
-  systemd-networkd.service    loaded active running Network Configuration
-```
-
-## Listening Sockets
-
-```text
-Netid State  Recv-Q Send-Q Local Address:Port Peer Address:PortProcess
-tcp   LISTEN 0      100        127.0.0.1:25        0.0.0.0:*    users:(("master",pid=341,fd=13))
-tcp   LISTEN 0      511          0.0.0.0:80        0.0.0.0:*    users:(("nginx",pid=248,fd=5),("nginx",pid=247,fd=5),("nginx",pid=246,fd=5),("nginx",pid=245,fd=5),("nginx",pid=244,fd=5),("nginx",pid=243,fd=5),("nginx",pid=242,fd=5),("nginx",pid=241,fd=5),("nginx",pid=240,fd=5))
-tcp   LISTEN 0      100            [::1]:25           [::]:*    users:(("master",pid=341,fd=14))
-tcp   LISTEN 0      4096               *:22              *:*    users:(("sshd",pid=162,fd=3),("systemd",pid=1,fd=40))
-tcp   LISTEN 0      4096               *:9000            *:*    users:(("nginx-ui",pid=128,fd=6))
-```
-
-## Manual Package Count
-
-272 packages recorded.
-
+- apt-sources.txt
+- config-paths.txt
+- cron.txt
+- df.txt
+- docker-compose-ls.txt
+- docker-images.txt
+- docker-ps.txt
+- enabled-services.txt
+- fstab.txt
+- hostname.txt
+- ip-address.txt
+- ip-route.txt
+- listening.txt
+- manual-packages.txt
+- meta.env
+- mounts.txt
+- openwrt-uci.txt
+- os-release.txt
+- packages.txt
+- pve-config.txt
+- resolv.conf.txt
+- running-services.txt
+- systemd-unit-files.txt
+- timers.txt
+- uname.txt

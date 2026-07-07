@@ -1,25 +1,52 @@
 # tyz (146)
 
 - Type: LXC
-- PVE status: stopped
-- Managed by: pve-cfg
+- PVE status before inventory: stopped
+- PVE status after inventory: stopped
+- Started only for inventory: yes
+- Managed by: ansible-cfg
+- OS: Debian GNU/Linux 12 (bookworm)
 - Configured address: 192.168.66.5/24
-- Observed address: not inspected
+- Observed address: 192.168.66.5/24
 - VLAN/zone: 66 (user_zone)
+- Detailed snapshot: ansible-cfg/snapshots/lxc/146-tyz
 
-## Runtime Snapshot
+## Snapshot Counts
 
-Container was stopped during inventory collection, so no guest-level inspection was performed.
+- Manual packages: 269
+- Installed packages: 270
+- Running services: 11
+- Enabled services: 14
+- Listening sockets: 3
+- Docker containers: 0
+- Docker images: 0
 
-## Running Services
+## Snapshot Files
 
-No running service snapshot available.
-
-## Listening Sockets
-
-No listening socket snapshot available.
-
-## Manual Package Count
-
-No package snapshot available.
-
+- apt-sources.txt
+- config-paths.txt
+- cron.txt
+- df.txt
+- docker-compose-ls.txt
+- docker-images.txt
+- docker-ps.txt
+- enabled-services.txt
+- fstab.txt
+- hostname.txt
+- ip-address.txt
+- ip-route.txt
+- listening.txt
+- manual-packages.txt
+- meta.env
+- mounts.txt
+- openwrt-uci.txt
+- os-release.txt
+- packages.txt
+- pve-config.txt
+- resolv.conf.txt
+- running-services.txt
+- start.log
+- stop.log
+- systemd-unit-files.txt
+- timers.txt
+- uname.txt

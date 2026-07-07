@@ -2,13 +2,15 @@ id: 104
 kind: lxc
 name: Jenkins
 status: stopped
+initial_status: stopped
 pve_host: dieSehnsucht
-os: debian
-managed_by: pve-cfg
+os: "Debian GNU/Linux 12 (bookworm)"
+os_id: debian
+managed_by: ansible-cfg
 vlan: 100
 zone: cicd_zone
 address_configured: 192.168.100.2/24
-address_observed: null
+address_observed: 192.168.100.2/24
 gateway: 192.168.100.1
 bridge: vmbr0
 onboot: false
@@ -16,3 +18,16 @@ unprivileged: true
 rootfs: "local-lvm:vm-104-disk-0,size=200G"
 memory_mb: 4096
 cores: 4
+guest_inventory: 
+  collected_at: 2026-07-07
+  inspection_status: collected
+  started_for_inventory: true
+  final_status: stopped
+  snapshot: ansible-cfg/snapshots/lxc/104-Jenkins
+  manual_package_count: 280
+  package_count: 350
+  running_service_count: 14
+  enabled_service_count: 19
+  listening_socket_count: 5
+  docker_container_count: 0
+  docker_image_count: 70
